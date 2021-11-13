@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+     box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+/* font-family: 'Pacifico', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;900&display=swap');
+/* font-family: 'Roboto Slab', serif; */
+
+ body{
+    font-family: 'Roboto Slab', serif;
+     color: rgb(60, 135, 255);
+
+ }
+ .wrapper{
+     background-color: rgb(0, 0, 0);
+     max-width: 1200px;
+     height: 600px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 0 auto;
+     
+ }
+ .restart{
+     width: 150px;
+     height: 40px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 40px;
+     color: white;
+     border: 3px solid rgb(60, 135, 255);
+     cursor: pointer;
+     transition: all 0.7s ease;
+     font-weight: bold;
+     margin: 10px;
+
+ }
+ h1{
+     font-size: 40px;
+     font-weight: bold;
+ }
+ .restart:hover{
+   background-color:rgb(60, 135, 255);
+   color:white;
+ }
+
+ .game{
+    display: flex;
+    flex-direction: column;
+     height: 500px;
+     width: 500px;
+ }
+.header{
+color: rgb(32, 211, 193);
+display: flex;
+font-size: 50px;
+
+}
+.header .player-x {
+    flex: 1;
+    border-bottom: 5px solid #eee;
+    padding-bottom: 8px;
+}
+.header .player-0 {
+    flex: 1;
+    border-bottom: 5px solid #eee;
+    padding-bottom: 8px;
+}
+.board{
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr  ;
+    grid-template-columns: 1fr 1fr 1fr  ;
+    grid-gap: 0px;
+    padding: 10px;
+    flex-grow: 1;
+    margin-left: 10px;
+
+}
+.board-tile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+.board-tile:not(:nth-child(3n))
+{ 
+border-right: 3px solid rgb(252, 252, 252);
+}
+
+.board-tile:not(:nth-last-child(-n+3))
+{
+border-bottom: 3px solid rgb(252, 252, 252);
+}
+
+.board-tile:hover{
+background-color: rgb(192, 176, 176);
+}
