@@ -10,6 +10,8 @@
 </head>
 
 <body>
+    <div id="loader"></div>
+
     <div class="wrapper">
         <!--  left section of the board  -->
         <div class="left">
@@ -22,9 +24,14 @@
             <div class="restart">
                 start a new game !
             </div>
+
             <div class="song-stuff">
                 <p>Click here to listen,We have some clam music for u </p>
+                 <div class="img">
+
+               
                 <img src="./Sound webpage_img/play.png" alt="" id="icon">
+            </div>
 
             </div>
         </div>
@@ -58,11 +65,27 @@
                 </div>
             </div>
         </div>
+
+        <!-- <script type="text/javascript" class="coffe-button" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="sayanmaitra" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script> -->
+
+        <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="sayanmaitra" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FF813F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+      
+
+
+
+
     </div>
     <script src="main.js" type="module"></script>
     <audio id="playsong" src="./Sound webpage_img/Yiruma, (이루마) - River Flows in You.mp3"></audio>
-    
-    <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="sayanmaitra" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+
+    <script>
+        var preloader = document.getElementById('loader');
+           setTimeout(("load",function(){
+          preloader.style.display="none";
+      }) ,5000)
+      
+      </script>
+  
 </body>
 
 </html>

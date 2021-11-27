@@ -35,11 +35,13 @@
      transition: all 0.7s ease;
      font-weight: bold;
      margin: 10px;
+     margin-left: 20px;
 
  }
  h1{
      font-size: 40px;
      font-weight: bold;
+     margin-left: 20px;
  }
  .restart:hover{
    background-color:rgb(60, 135, 255);
@@ -99,3 +101,60 @@ border-bottom: 3px solid rgb(252, 252, 252);
 .board-tile:hover{
 background-color: rgb(245, 235, 235);
 }
+
+
+#loader{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: #21242d url('https://cssauthor.com/wp-content/uploads/2018/06/Bouncy-Preloader.gif') no-repeat center;
+	z-index: 100;
+    
+}
+
+ /* song stufff  */
+.song-stuff{
+    /* border: 2px solid black; */
+    margin-left: 20px;
+    margin-right: 50px;
+     
+} 
+ .song-stuff p {
+     color: rgb(255, 255, 255);
+     font-family:' Roboto Slab', serif;
+     font-size: 30px;
+     font-weight: bold;
+ }
+ .song-stuff #icon
+ {
+width: 80px;
+cursor: pointer;
+display: block;
+margin-left: auto;
+margin-right: auto;
+padding-bottom: 20px;
+
+ }
+
+ #bmc-wbtn{
+    bottom: 1000px;
+}
+
+#bmc-wbtn + div{
+    bottom:15px;
+}
+
+
+
+.right{
+    margin-right: 50px;
+}
+
+
+
+
+
+
+
+
+

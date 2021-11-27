@@ -23,6 +23,9 @@ let Gameview= new gameview();
 // console.log(Game.board);
 // Gameview.updateThegameboard(Game);
 
+document.querySelector(".restart").addEventListener("click",()=>{
+        onRestartClick();
+    })
 
 
 let tiles= document.querySelectorAll(".board-tile")
@@ -44,8 +47,13 @@ function onTileclick(i) {
     Gameview.updateThegameboard(Game); 
     //  then it will update the board and next player can play now , its next turn
 
-    Game.nextTurn();
 }
+function  onRestartClick() {
+    Game= new game();
+    Gameview.updateThegameboard(Game);
+}
+
+
 
 
 
@@ -60,6 +68,16 @@ var mysong = document.getElementById("playsong");
 var icon = document.getElementById("icon");
 console.log(icon);
  icon.onclick= function () {
-     mysong.play();
-     console.log(mysong);
+    //  mysong.play();
+    //  console.log(mysong);
+     if (mysong.paused)
+     {
+         mysong.play();
+         icon.src="./Sound webpage_img/pause.png";
+     }
+     else{
+         mysong.pause();
+         icon.src="./Sound webpage_img/play.png";
+
+     }
  }
