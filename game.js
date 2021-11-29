@@ -16,8 +16,7 @@ this.board= new Array(9).fill(null);
 {
      if(this.turn== "X")
      {
-          this.turn="O" ; 
-
+          this.turn="O";
      }
      else{
           this.turn="X" ; 
@@ -92,6 +91,32 @@ let winningcombination= this.findwinningcombinations();
        
  }
  }
+
+
+// 1 .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 2.
+
 
 
 

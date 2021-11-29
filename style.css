@@ -13,8 +13,12 @@
 
  }
  .wrapper{
-     background-color: rgb(255, 174, 168);
-     max-width: 1200px;
+    background: #ED4264;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FFEDBC, #ED4264);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FFEDBC, #ED4264); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+     
+     width: 1200px;
      height: 600px;
      display: flex;
      align-items: center;
@@ -62,15 +66,32 @@ font-size: 50px;
 }
 .header .player-x {
     flex: 1;
-    border-bottom: 5px solid rgb(162, 160, 255);
+    border-bottom: 5px solid rgb(60 ,135 ,255);
     padding-bottom: 8px;
     
 }
-.header .player-0 {
+.header .player-O {
     flex: 1;
-    border-bottom: 5px solid #eee;
+    border-bottom: 5px solid rgb(60 ,135 ,255);
     padding-bottom: 8px;
 }
+
+
+
+
+/* showa which player turn  */
+
+.player-x.active{
+    color:  rgb(60 ,135 ,255);
+    border-color: rgb(255, 255, 255) ;
+}
+.player-O.active{
+   color:  rgb(60 ,135 ,255);
+   border-color: rgb(255, 255, 255);
+}
+
+
+
 .board{
     background-color:rgb(193 ,192 ,240);
     display: grid;
@@ -107,7 +128,7 @@ background-color: rgb(245, 235, 235);
 	position: fixed;
 	width: 100%;
 	height: 100vh;
-	background: #21242d url('https://cssauthor.com/wp-content/uploads/2018/06/Bouncy-Preloader.gif') no-repeat center;
+	background: #515781 url('https://cdn.dribbble.com/users/1098565/screenshots/2942125/media/751144bd2f30e36338446643f2dea5f1.gif') no-repeat center;
 	z-index: 100;
     
 }
@@ -135,20 +156,14 @@ margin-right: auto;
 padding-bottom: 20px;
 
  }
-
- #bmc-wbtn{
-    bottom: 1000px;
-}
-
-#bmc-wbtn + div{
-    bottom:15px;
-}
-
+ 
 
 
 .right{
     margin-right: 50px;
 }
+
+
 
 
 

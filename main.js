@@ -39,7 +39,6 @@ tiles.forEach((tile)=>
 })
 
 
-
 function onTileclick(i) {
     // we have to make a move first 
     Game.makeMove(i);
@@ -53,7 +52,7 @@ function  onRestartClick() {
     Gameview.updateThegameboard(Game);
 }
 
-
+Gameview.updateThegameboard(Game);
 
 
 
