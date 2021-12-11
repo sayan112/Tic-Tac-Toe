@@ -65,7 +65,7 @@ Gameview.updateThegameboard(Game);
 //  song pupose 
 var mysong = document.getElementById("playsong");
 var icon = document.getElementById("icon");
-console.log(icon);
+// console.log(icon);
  icon.onclick= function () {
     //  mysong.play();
     //  console.log(mysong);

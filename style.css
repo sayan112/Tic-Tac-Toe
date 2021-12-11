@@ -163,7 +163,12 @@ padding-bottom: 20px;
     margin-right: 50px;
 }
 
-
+.title-x{
+    color: rgb(60 ,135 ,255);
+}
+.title-o{
+    color: rgb(255, 255, 255);
+}
 
 
 

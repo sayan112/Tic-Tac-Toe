@@ -68,7 +68,7 @@ findwinningcombinations()
 
      for(const combination of winningcombinations)
      {
-          console.log(combination);
+          // console.log(combination);
           const[a,b,c]=combination;
            if(this.board[a] && this.board[a]==this.board[b] && this.board[a]==this.board[c])
            {
