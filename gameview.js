@@ -11,15 +11,21 @@ updateThegameboard(game)
 
 {
     this.updateTurn(game);
+    const winnigncombination = game.findwinningcombinations();
      for(let i=0;i<game.board.length;i++)
      {
          const tile = document.querySelector(`.board-tile[data-index='${i}']`);
         //  console.log(tile);
         //  tile.textContent=game.board[i];
+         tile.classList.remove("title-winner");
          let tileType= game.board[i]=='X' ? "title-x" : "title-o";
          tile.innerHTML=`<span class="${tileType}">${game.board[i]?game.board[i] :""}
          </span>`
         console.log(tileType);
+         if(winnigncombination && winnigncombination.includes(i))
+         {
+             tile.classList.add("title-winner");
+         }
      }
 }
 
